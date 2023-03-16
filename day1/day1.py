@@ -28,7 +28,6 @@ for item in content:
 		calories2 = 0
 	else:
 		calories2 += int(item)
-
 		if calories2 > max1:
 			max3 = max2
 			max2 = max1
