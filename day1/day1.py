@@ -29,13 +29,15 @@ for item in content:
 	else:
 		calories2 += int(item)
 
-		if calories2 > max3:
-			max3 = calories2
-		elif calories2 > max2:
-			max2 = calories2
-		elif calories2 > max1:
+		if calories2 > max1:
+			max3 = max2
+			max2 = max1
 			max1 = calories2
+		elif calories2 > max2:
+			max3 = max2
+			max2 = calories2
+		elif calories2 > max3:
+			max3 = calories2
 
-print(max3)
-print(max2)
-print(max1)
+# Part 2 answer
+print(max3 + max2 + max1)
