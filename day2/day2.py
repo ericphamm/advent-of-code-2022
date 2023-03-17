@@ -1,6 +1,14 @@
 with open('day2/day2.txt') as file:
 	content = file.read().strip().split('\n')
 
+# print(content)
+
+# Part 1
+
+#A Rock, B Paper, C Scissors
+#X for Rock, Y for Paper, and Z for Scissors
+#0 if you lost, 3 if the round was a draw, and 6 if you won
+
 combo = {
 'A X' : 4,
 'A Y': 8,
@@ -19,6 +27,13 @@ for round in content:
 	total = total + combo[round]
 
 print(total)
+
+# Part 2
+
+#A Rock, B Paper, C Scissors
+#X lose, Y draw, Z win
+#1 for Rock, 2 for Paper, and 3 for Scissors
+#0 if you lost, 3 if the round was a draw, and 6 if you won
 
 combo_2 = {
 'A X' : 0 + 3,
