@@ -17,6 +17,6 @@ for items in content:
 
 	for priority,character in enumerate(ascii_letters):
 		if character in first_compar and character in second_compar:
-			total_priority = total_priority + priority
+			total_priority = total_priority + priority + 1 #because priority starts with a = 1
 
 print(total_priority)
