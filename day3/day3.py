@@ -31,6 +31,6 @@ for i in range(0, len(content), 3):
 
 	for priority, character in enumerate(ascii_letters):
 		if character in each_group[0] and character in each_group[1] and character in each_group[2]:
-			total_priority2 = total_priority2 + priority
+			total_priority2 = total_priority2 + priority + 1
 
 print(total_priority2)
