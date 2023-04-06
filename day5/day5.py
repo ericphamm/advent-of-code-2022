@@ -1,5 +1,5 @@
 with open('day5/day5.txt') as file:
-	lines = file.readlines()
+	stacks, instructions = (i.splitlines() for i in file.read().split("\n\n"))
 
-print(lines)
+print(stacks, instructions)
 
